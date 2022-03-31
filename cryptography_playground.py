@@ -3,6 +3,9 @@
 <module_description>
 """
 
+__author__ = "evan wilkerson"
+__version__ = "beta-00.00.01"
+
 import os
 from cryptography.fernet import Fernet
 
