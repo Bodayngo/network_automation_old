@@ -7,10 +7,10 @@ import os
 from cryptography.fernet import Fernet
 
 
-encrypted_password = "gAAAAABiRZ7aSE5kVEK7NVVblLdbZNhZ33ZW9E0bMtA6GsKArAH4cZ2Ts6-oxQIoWIE_NVcHipJbmkirW9TykQ5-w44LBvuXkQ=="
+encrypted_string = "gAAAAABiRax5hP0y0K2tFppot7lEPgbn3kaFfhDfc9hY25BooNsxaSAsIU27YES1wA9W9jjamyAThJc3I77sh32MsoAiLHFGOPnvqjmke4kgNmDgcxh94yA="
 
 
-def decrypt_password(encrypted_unicode_string, key_filepath):
+def decrypt_string(encrypted_unicode_string, key_filepath):
     """
     <function_description>
 
@@ -34,7 +34,7 @@ def decrypt_password(encrypted_unicode_string, key_filepath):
 
 def main():
     """function docstring"""
-    password = decrypt_password(encrypted_password, "./.key.key")
+    password = decrypt_string(encrypted_string, "./.key.key")
     print(password)
 
 
