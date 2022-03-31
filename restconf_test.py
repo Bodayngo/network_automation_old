@@ -16,9 +16,7 @@ RESTCONF_HEADERS = {
 
 
 def main():
-    """
-    function docstring
-    """
+    """ function docstring """
     with httpx.Client() as client:
         response = client.get(
             url=URL,
