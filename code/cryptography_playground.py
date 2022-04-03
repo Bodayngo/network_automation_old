@@ -11,6 +11,7 @@ from cryptography.fernet import Fernet
 
 
 SECRET = "gAAAAABiRax5hP0y0K2tFppot7lEPgbn3kaFfhDfc9hY25BooNsxaSAsIU27YES1wA9W9jjamyAThJc3I77sh32MsoAiLHFGOPnvqjmke4kgNmDgcxh94yA="
+KEY_FILEPATH = "/home/bodayngo/git_repos/network_automation/code/.key.key"
 
 
 def decrypt_string(encrypted_unicode_string):
@@ -24,9 +25,8 @@ def decrypt_string(encrypted_unicode_string):
     Returns
         password (str): <return_description>
     """
-    key_filepath = "/home/ejwilkerson/git_repos/network_automation/code/.key.key"
-    if os.path.exists(key_filepath):
-        with open(key_filepath, "rb") as my_key_file:
+    if os.path.exists(KEY_FILEPATH):
+        with open(KEY_FILEPATH, "rb") as my_key_file:
             key = my_key_file.read()
         fernet = Fernet(key)
         encrypted_byte_string = encrypted_unicode_string.encode()
