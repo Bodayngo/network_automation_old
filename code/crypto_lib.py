@@ -8,10 +8,6 @@ import os
 from cryptography.fernet import Fernet
 
 
-SECRET = (
-    "gAAAAABiRax5hP0y0K2tFppot7lEPgbn3kaFfhDfc9hY25BooNsxaSAsIU27YE"
-    "S1wA9W9jjamyAThJc3I77sh32MsoAiLHFGOPnvqjmke4kgNmDgcxh94yA="
-)
 KEY_FILEPATH = "/home/bodayngo/git_repos/network_automation/code/.key.key"
 
 
@@ -26,16 +22,3 @@ def decrypt_string(encrypted_unicode_string):
         return password
     else:
         print("key file not found")
-
-
-def main():
-    """ function docstring """
-    password = decrypt_string(SECRET)
-    print(password)
-
-
-if __name__ == "__main__":
-    try:
-        main()
-    except KeyboardInterrupt:
-        print("\nuser has exited script")

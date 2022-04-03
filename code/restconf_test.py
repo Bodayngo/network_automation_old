@@ -5,7 +5,7 @@ __author__ = "evan wilkerson"
 __version__ = "beta-00.00.01"
 
 import httpx
-from cryptography_playground import decrypt_string
+from crypto_lib import decrypt_string
 
 
 SECRET = (
