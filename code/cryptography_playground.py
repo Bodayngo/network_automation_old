@@ -29,7 +29,7 @@ def decrypt_string(encrypted_unicode_string):
 
 
 def main():
-    """function docstring"""
+    """ function docstring """
     password = decrypt_string(SECRET)
     print(password)
 
