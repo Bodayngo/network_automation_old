@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""
-<module_description>
-"""
+""" module description """
 
 __author__ = "evan wilkerson"
 __version__ = "beta-00.00.01"
@@ -15,16 +13,7 @@ KEY_FILEPATH = "/home/bodayngo/git_repos/network_automation/code/.key.key"
 
 
 def decrypt_string(encrypted_unicode_string):
-    """
-    <function_description>
-
-    Parameters
-        encrypted_unicode_string (str): <parameter_description>
-        key_filepath (str): <parameter_description>
-
-    Returns
-        password (str): <return_description>
-    """
+    """ function description """
     if os.path.exists(KEY_FILEPATH):
         with open(KEY_FILEPATH, "rb") as my_key_file:
             key = my_key_file.read()
