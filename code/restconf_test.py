@@ -11,15 +11,15 @@ from cryptography_playground import decrypt_string
 SECRET = (
     "gAAAAABiRbjtOp7H_GCiYUYjI7pCkEHGDCWjqBxbhaDoBZgPeBr"
     "l0qMu6dAgNcgJzX5b4MnsBfD68cCvKo-jpR26VWYCAFQ56Q=="
-    )
+)
 URL = (
     "https://sandbox-iosxe-latest-1.cisco.com:443/restconf"
     "/data/Cisco-IOS-XE-native:native/interface/"
-    )
+)
 RESTCONF_HEADERS = {
     "Accept": "application/yang-data+json",
-    "Content-Type": "application/yang-data+json"
-    }
+    "Content-Type": "application/yang-data+json",
+}
 
 
 def main():
@@ -27,9 +27,7 @@ def main():
     password = decrypt_string(SECRET)
     with httpx.Client() as client:
         response = client.get(
-            url=URL,
-            headers=RESTCONF_HEADERS,
-            auth=('developer', password)
+            url=URL, headers=RESTCONF_HEADERS, auth=("developer", password)
         )
     print(response.text)
 
