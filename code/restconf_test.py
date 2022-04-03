@@ -7,7 +7,6 @@ __version__ = "beta-00.00.01"
 import httpx
 from crypto_lib import decrypt_string
 
-
 SECRET = (
     "gAAAAABiRbjtOp7H_GCiYUYjI7pCkEHGDCWjqBxbhaDoBZgPeBr"
     "l0qMu6dAgNcgJzX5b4MnsBfD68cCvKo-jpR26VWYCAFQ56Q=="

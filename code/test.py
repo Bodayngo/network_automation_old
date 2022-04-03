@@ -4,14 +4,13 @@
 __author__ = "evan wilkerson"
 __version__ = "beta-00.00.01"
 
-import os
-from cryptography.fernet import Fernet
 from crypto_lib import decrypt_string
 
 SECRET = (
     "gAAAAABiRax5hP0y0K2tFppot7lEPgbn3kaFfhDfc9hY25BooNsxaSAsIU27YE"
     "S1wA9W9jjamyAThJc3I77sh32MsoAiLHFGOPnvqjmke4kgNmDgcxh94yA="
 )
+
 
 def main():
     """ function docstring """
