@@ -8,7 +8,10 @@ import os
 from cryptography.fernet import Fernet
 
 
-SECRET = "gAAAAABiRax5hP0y0K2tFppot7lEPgbn3kaFfhDfc9hY25BooNsxaSAsIU27YES1wA9W9jjamyAThJc3I77sh32MsoAiLHFGOPnvqjmke4kgNmDgcxh94yA="
+SECRET = (
+    "gAAAAABiRax5hP0y0K2tFppot7lEPgbn3kaFfhDfc9hY25BooNsxaSAsIU27YE"
+    "S1wA9W9jjamyAThJc3I77sh32MsoAiLHFGOPnvqjmke4kgNmDgcxh94yA="
+    )
 KEY_FILEPATH = "/home/bodayngo/git_repos/network_automation/code/.key.key"
 
 

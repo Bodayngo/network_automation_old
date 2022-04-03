@@ -8,9 +8,18 @@ import httpx
 from cryptography_playground import decrypt_string
 
 
-SECRET = "gAAAAABiRbjtOp7H_GCiYUYjI7pCkEHGDCWjqBxbhaDoBZgPeBrl0qMu6dAgNcgJzX5b4MnsBfD68cCvKo-jpR26VWYCAFQ56Q=="
-URL = 'https://sandbox-iosxe-latest-1.cisco.com:443/restconf/data/Cisco-IOS-XE-native:native/interface/'
-RESTCONF_HEADERS = {"Accept": "application/yang-data+json", "Content-Type": "application/yang-data+json"}
+SECRET = (
+    "gAAAAABiRbjtOp7H_GCiYUYjI7pCkEHGDCWjqBxbhaDoBZgPeBr"
+    "l0qMu6dAgNcgJzX5b4MnsBfD68cCvKo-jpR26VWYCAFQ56Q=="
+    )
+URL = (
+    "https://sandbox-iosxe-latest-1.cisco.com:443/restconf"
+    "/data/Cisco-IOS-XE-native:native/interface/"
+    )
+RESTCONF_HEADERS = {
+    "Accept": "application/yang-data+json",
+    "Content-Type": "application/yang-data+json"
+    }
 
 
 def main():
