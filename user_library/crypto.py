@@ -7,7 +7,7 @@ __version__ = "beta-00.00.01"
 import os
 from cryptography.fernet import Fernet
 
-KEY_FILEPATH = "/home/bodayngo/git_repos/network_automation/code/.key.key"
+KEY_FILEPATH = "/home/ejwilkerson/git_repos/network_automation/.key.key"
 
 
 def decrypt_string(encrypted_unicode_string):

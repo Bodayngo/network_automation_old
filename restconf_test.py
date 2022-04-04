@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-""" module docstring """
+""" module description """
 
 __author__ = "evan wilkerson"
 __version__ = "beta-00.00.01"
 
 import httpx
-from crypto_lib import decrypt_string
+import user_library.crypto as crypto
 
 SECRET = (
     "gAAAAABiRbjtOp7H_GCiYUYjI7pCkEHGDCWjqBxbhaDoBZgPeBr"
@@ -23,7 +23,7 @@ RESTCONF_HEADERS = {
 
 def main():
     """ function docstring """
-    password = decrypt_string(SECRET)
+    password = crypto.decrypt_string(SECRET)
     with httpx.Client() as client:
         response = client.get(
             url=URL, headers=RESTCONF_HEADERS, auth=("developer", password)
