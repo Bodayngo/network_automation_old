@@ -19,5 +19,5 @@ def decrypt_string(encrypted_unicode_string):
         encrypted_byte_string = encrypted_unicode_string.encode()
         password = fernet.decrypt(encrypted_byte_string).decode()
         return password
-    else:
-        print("key file not found")
+    print("key file not found")
+    return None
