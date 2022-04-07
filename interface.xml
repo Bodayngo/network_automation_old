@@ -1,0 +1,12 @@
+<Vlan xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native"  xmlns:ios="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+    <name>128</name>
+    <description>TEST</description>
+    <ip>
+        <address>
+            <primary>
+                <address>10.13.128.253</address>
+                <mask>255.255.255.0</mask>
+            </primary>
+        </address>
+    </ip>
+</Vlan>

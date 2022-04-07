@@ -1,0 +1,17 @@
+<config xmlns="http://tail-f.com/ns/config/1.0">
+  <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+    <interface>
+      <Vlan>
+        <name>128</name>
+        <ip>
+          <address>
+            <primary>
+              <address>10.13.128.253</address>
+              <mask>255.255.255.0</mask>
+            </primary>
+          </address>
+        </ip>
+      </Vlan>
+    </interface>
+  </native>
+</config>

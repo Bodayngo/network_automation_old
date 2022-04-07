@@ -1,0 +1,25 @@
+{
+    "data": {
+      "Cisco-IOS-XE-native:native": {
+        "interface": {
+          "Vlan": [
+            {
+              "name": 40,
+              "ip": {
+                "address": {
+                  "primary": {
+                    "address": "10.5.40.10",
+                    "mask": "255.255.255.0"
+                  }
+                }
+              },
+              "mop": {
+                "enabled": false,
+                "sysid": false
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
