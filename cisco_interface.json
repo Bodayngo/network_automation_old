@@ -1,21 +1,21 @@
 {
     "data": {
-      "Cisco-IOS-XE-native:native": {
-        "interface": {
-          "Vlan": [
-            {
-              "name": 128,
-              "ip": {
-                "address": {
-                  "primary": {
-                    "address": "10.13.128.253",
-                    "mask": "255.255.255.0"
-                  }
-                }
-              }
+        "Cisco-IOS-XE-native:native": {
+            "interface": {
+                "Vlan": [
+                    {
+                        "name": 128,
+                        "ip": {
+                            "address": {
+                                "primary": {
+                                    "address": "10.13.128.253",
+                                    "mask": "255.255.255.0"
+                                }
+                            }
+                        }
+                    }
+                ]
             }
-          ]
         }
-      }
     }
-  }
+}
